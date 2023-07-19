@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="LOgo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 376.78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m500,0H123.22L0,376.78h376.78l42.41-129.44-33.75-59.06,72.16-58.84L500,0Zm-189.39,282.64h-169.4l61.72-188.5h169.4l-115.23,94.14,53.51,94.36Z"/>
+</svg>
