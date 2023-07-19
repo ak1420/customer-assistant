@@ -50,7 +50,7 @@
                     </a>
                     <button data-collapse-toggle="navbar-default" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                        aria-controls="navbar-default" aria-expanded="false">
+                        aria-controls="navbar-default" aria-expanded="false" id="menu-btn">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 17 14">
@@ -58,7 +58,7 @@
                                 d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
                     </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <div class="hidden w-full md:block md:w-auto rounded-2xl mt-5 max-md:bg-white" id="navbar-default">
                         <ul
                             class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 contentFont">
                             <li>
@@ -144,7 +144,8 @@
                                         </div>
                                         Seamless Integration
                                     </dt>
-                                    <dd class="mt-1.5 text-base contentFont text-blue-900">Effortlessly integrate AI chatbots into
+                                    <dd class="mt-1.5 text-base contentFont text-blue-900">Effortlessly integrate AI
+                                        chatbots into
                                         your support channels.
                                     </dd>
                                 </div>
@@ -156,7 +157,8 @@
                                         </div>
                                         Rapid Resolution
                                     </dt>
-                                    <dd class="mt-1.5 text-base contentFont text-blue-900">Automate tasks for faster resolutions,
+                                    <dd class="mt-1.5 text-base contentFont text-blue-900">Automate tasks for faster
+                                        resolutions,
                                         reducing customer wait times.</dd>
                                 </div>
                                 <div class="relative pl-16">
@@ -167,18 +169,20 @@
                                         </div>
                                         Personalized Interactions
                                     </dt>
-                                    <dd class="mt-1.5 text-base contentFont text-blue-900"> Tailor customer interactions based on
+                                    <dd class="mt-1.5 text-base contentFont text-blue-900"> Tailor customer interactions
+                                        based on
                                         preferences and behavior, creating a customized experience.</dd>
                                 </div>
                                 <div class="relative pl-16">
                                     <dt class="text-2xl font-semibold headingFont text-blue-900">
                                         <div
                                             class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600">
-                                           <img src="./Assistance.svg" alt="Assistance">
+                                            <img src="./Assistance.svg" alt="Assistance">
                                         </div>
                                         24/7 Assistance
                                     </dt>
-                                    <dd class="mt-1.5 text-base contentFont text-blue-900">Provide round-the-clock support,
+                                    <dd class="mt-1.5 text-base contentFont text-blue-900">Provide round-the-clock
+                                        support,
                                         ensuring your customers receive help whenever they need it.</dd>
                                 </div>
                             </dl>
@@ -313,7 +317,8 @@
                         <figure
                             class="flex flex-col p-8 bg-white border border-blue-100 hover:border-blue-600 rounded hover:shadow-xl hover:shadow-blue-900/5">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <p class="my-4 text-base text-blue-900 contentFont">Our customer satisfaction ratings have soared
+                                <p class="my-4 text-base text-blue-900 contentFont">Our customer satisfaction ratings
+                                    have soared
                                     since implementing this AI support solution. It has significantly improved our
                                     response time and accuracy.</p>
                             </blockquote>
@@ -331,7 +336,8 @@
                         <figure
                             class="flex flex-col p-8 bg-white border border-blue-100 hover:border-blue-600 rounded hover:shadow-xl hover:shadow-blue-900/5">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <p class="my-4 text-base text-blue-900 contentFont">The AI chatbots have seamlessly integrated into
+                                <p class="my-4 text-base text-blue-900 contentFont">The AI chatbots have seamlessly
+                                    integrated into
                                     our customer support system, freeing up our staff to focus on more complex customer
                                     needs. It's been a game-changer for our organization.</p>
                             </blockquote>
@@ -362,7 +368,8 @@
                             <div>
                                 <p class="font-display text-4xl font-medium  text-blue-900 sm:text-5xl headingFont">
                                     About Us</p>
-                                <p class="mt-8 text-lg  text-blue-900 contentFont">At Brocan.in, we pride ourselves on delivering
+                                <p class="mt-8 text-lg  text-blue-900 contentFont">At Brocan.in, we pride ourselves on
+                                    delivering
                                     cutting-edge solutions to enhance customer support. With years of experience in the
                                     industry, we understand the importance of providing efficient and personalized
                                     assistance to your customers. Our AI-driven support solution is designed to
@@ -398,11 +405,30 @@
                     <img src="./broocan logo.svg" class="h-8 mr-3" alt="Brocan Logo" />
                     <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap">Brocan</span> -->
                 </a>
-                <p class="mt-6 text-base text-slate-500 md:mt-0 contentFont">Copyright © <!-- -->2023<!-- --> Brocan, LLC. All
+                <p class="mt-6 text-base text-slate-500 md:mt-0 contentFont">Copyright © <!-- -->2023<!-- --> Brocan,
+                    LLC. All
                     rights reserved.</p>
             </div>
         </footer>
     </div>
 </body>
+
+<script>
+    const menu_btn = document.getElementById('menu-btn');
+    menu_btn.addEventListener('click', () => {
+
+        console.log('click')
+        const navbar = document.getElementById('navbar-default');
+
+        if (navbar.style.display == "block") {
+            navbar.style.display = "none"
+        }
+        else {
+            navbar.style.display = "block"
+        }
+
+    }
+    )
+</script>
 
 </html>
