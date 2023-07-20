@@ -426,5 +426,22 @@
 
 </body>
 
+    <script>
+        const menu_btn = document.getElementById('menu-btn');
+    menu_btn.addEventListener('click', () => {
+
+        console.log('click')
+        const navbar = document.getElementById('navbar-default');
+
+        if (navbar.style.display == "block") {
+            navbar.style.display = "none"
+        }
+        else {
+            navbar.style.display = "block"
+        }
+
+    }
+    )
+    </script>
 
 </html>
