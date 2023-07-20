@@ -1,11 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="LOgo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 376.78">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="LOgo" viewBox="0 0 500 376.78">
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: url(#linear-gradient);
       }
     </style>
+    <linearGradient id="linear-gradient" x1="247.37" y1="-89.54" x2="253.5" y2="558.97" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".34" stop-color="#a9f4fa"/>
+      <stop offset=".71" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#5900d4"/>
+    </linearGradient>
   </defs>
   <path class="cls-1" d="m500,0H123.22L0,376.78h376.78l42.41-129.44-33.75-59.06,72.16-58.84L500,0Zm-189.39,282.64h-169.4l61.72-188.5h169.4l-115.23,94.14,53.51,94.36Z"/>
 </svg>
